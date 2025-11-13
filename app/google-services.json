@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "220232160754",
+    "project_id": "olympplanner",
+    "storage_bucket": "olympplanner.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220232160754:android:ac5fb4b25120dba1a2876b",
+        "android_client_info": {
+          "package_name": "com.olympplanner.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn9htz4X_36U1tIl-pWqMvKdBwR6OvRMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

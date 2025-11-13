@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Olymp Planner</string>
+
+    <!-- Navigation -->
+    <string name="nav_week">Week</string>
+    <string name="nav_day">Day</string>
+    <string name="nav_notes">Notes</string>
+    <string name="nav_themes">Themes</string>
+
+    <!-- Week Screen -->
+    <string name="week_today">Today</string>
+    <string name="week_empty_state">Add your first task of the week</string>
+    <string name="week_more_tasks">+ %d more</string>
+    <string name="week_filter_all">All</string>
+    <string name="week_filter_personal">Personal</string>
+    <string name="week_filter_work">Work</string>
+    <string name="week_filter_leisure">Leisure</string>
+    <string name="week_filter_deadlines">Deadlines</string>
+
+    <!-- Day Screen -->
+    <string name="day_empty_state">Your day is empty like the sky above Olympus. Add a task.</string>
+    <string name="day_morning">Morning</string>
+    <string name="day_afternoon">Afternoon</string>
+    <string name="day_evening">Evening</string>
+    <string name="day_add_task">+ Task</string>
+    <string name="day_add_event">+ Event</string>
+    <string name="day_add_template">+ Template</string>
+
+    <!-- Notes Screen -->
+    <string name="notes_empty_state">Write a thought — lightning of inspiration is near.</string>
+    <string name="notes_all">All</string>
+    <string name="notes_by_category">By Categories</string>
+    <string name="notes_pinned">Pinned</string>
+    <string name="notes_search">Search notes…</string>
+
+    <!-- Themes Screen -->
+    <string name="themes_day">Day</string>
+    <string name="themes_night">Night</string>
+    <string name="themes_lightning">Lightning</string>
+    <string name="themes_glow_intensity">Glow Intensity</string>
+    <string name="themes_accent_saturation">Accent Saturation</string>
+    <string name="themes_show_columns">Show Columns</string>
+
+    <!-- Task Dialog -->
+    <string name="task_title">Title</string>
+    <string name="task_description">Description</string>
+    <string name="task_date">Date</string>
+    <string name="task_time">Time</string>
+    <string name="task_duration">Duration</string>
+    <string name="task_repeat">Repeat</string>
+    <string name="task_category">Category</string>
+    <string name="task_priority">Priority</string>
+    <string name="task_reminder">Reminder</string>
+    <string name="task_checklist">Checklist</string>
+    <string name="task_tags">Tags</string>
+    <string name="task_color">Color</string>
+    <string name="task_save">Save</string>
+    <string name="task_cancel">Cancel</string>
+    <string name="task_delete">Delete</string>
+    <string name="task_duplicate">Duplicate</string>
+    <string name="task_move">Move</string>
+    <string name="task_edit">Edit</string>
+    <string name="task_mark_done">Mark Done</string>
+
+    <!-- Categories -->
+    <string name="category_work">Work</string>
+    <string name="category_personal">Personal</string>
+    <string name="category_leisure">Leisure</string>
+
+    <!-- Priority -->
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+
+    <!-- Repeat -->
+    <string name="repeat_none">None</string>
+    <string name="repeat_daily">Daily</string>
+    <string name="repeat_weekly">Weekly</string>
+    <string name="repeat_weekdays">Weekdays</string>
+    <string name="repeat_custom">Custom</string>
+
+    <!-- Actions -->
+    <string name="action_add">Add</string>
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_share">Share</string>
+    <string name="action_pin">Pin</string>
+    <string name="action_unpin">Unpin</string>
+    <string name="action_favorite">Favorite</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Task Reminders</string>
+    <string name="notification_channel_description">Notifications for task reminders and deadlines</string>
+    <string name="notification_action_snooze_10">10 min</string>
+    <string name="notification_action_snooze_30">30 min</string>
+    <string name="notification_action_snooze_60">1 hour</string>
+    <string name="notification_action_done">Done</string>
+    <string name="notification_action_open">Open</string>
+
+    <!-- Days of Week -->
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
+    <string name="day_sunday">Sunday</string>
+
+    <string name="day_mon">Mon</string>
+    <string name="day_tue">Tue</string>
+    <string name="day_wed">Wed</string>
+    <string name="day_thu">Thu</string>
+    <string name="day_fri">Fri</string>
+    <string name="day_sat">Sat</string>
+    <string name="day_sun">Sun</string>
+</resources>

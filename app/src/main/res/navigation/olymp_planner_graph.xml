@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/olymp_planner_graph"
+    app:startDestination="@id/olympPlannerLoadFragment">
+
+    <fragment
+        android:id="@+id/olympPlannerLoadFragment"
+        android:name="com.olympplanner.app.bkgoprte.presentation.ui.load.OlympPlannerLoadFragment"
+        android:label="OlympPlannerLoadFragment" >
+        <action
+            android:id="@+id/action_olympPlannerLoadFragment_to_olympPlannerV"
+            app:destination="@id/olympPlannerV"
+            app:popUpTo="@id/olymp_planner_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/olympPlannerV"
+        android:name="com.olympplanner.app.bkgoprte.presentation.ui.view.OlympPlannerV"
+        android:label="OlympPlannerV" />
+</navigation>
