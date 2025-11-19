@@ -100,7 +100,7 @@ fun NotesScreen(
                             onFavorite = {
                                 viewModel.toggleNoteFavorite(note.id, !note.isFavorite)
                             },
-                            modifier = Modifier.animateItemPlacement()
+//                            modifier = Modifier.animateItemPlacement()
                         )
                     }
                 }

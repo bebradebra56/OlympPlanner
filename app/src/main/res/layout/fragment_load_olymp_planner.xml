@@ -6,15 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
+    <ImageView
         android:id="@+id/olympPlannerBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/hatch_plan_dark_surface_color"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/olymp_planner_back" />
 
 
     <androidx.constraintlayout.widget.Group
@@ -30,51 +31,41 @@
         android:visibility="gone"
         app:constraint_referenced_ids="olympPlannerConnectionState" />
 
-    <TextView
+    <ImageView
         android:id="@+id/olympPlannerProgressText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/black_han_sans"
-        android:shadowColor="@color/black"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="10"
-        android:text="Loading..."
-        android:textColor="@color/hatch_plan_yellow"
-        android:textSize="30sp"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
         app:layout_constraintBottom_toTopOf="@+id/olympPlannerProgress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/olymp_planne_load" />
 
     <ProgressBar
         android:id="@+id/olympPlannerProgress"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:indeterminateTint="@color/hatch_plan_yellow"
+        android:indeterminateTint="@color/olymp_planner_yellow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47000003" />
+        app:layout_constraintVertical_bias="0.65999997" />
 
 
-    <TextView
+    <ImageView
         android:id="@+id/olympPlannerConnectionState"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/black_han_sans"
-        android:shadowColor="@color/black"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="10"
-        android:text="No internet connection"
-        android:textColor="@color/hatch_plan_yellow"
-        android:textSize="30sp"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/olymp_planner_state" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/olympPlannerNotiGroup"
@@ -92,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hatch_plan_portain_back" />
+        app:srcCompat="@drawable/olymp_planne_portain_baack" />
 
     <TextView
         android:id="@+id/olympPlannerNotifText"
@@ -100,8 +91,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="11dp"
-        android:fontFamily="@font/black_han_sans"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/titan_one"
         android:gravity="center"
         android:shadowColor="@color/black"
         android:shadowDx="2"
@@ -122,9 +113,9 @@
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/hatch_plan_btn"
-        android:fontFamily="@font/black_han_sans"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/olymp_planner_btn"
+        android:fontFamily="@font/titan_one"
         android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
@@ -135,16 +126,18 @@
         app:layout_constraintEnd_toEndOf="@+id/olympPlannerNotifText"
         app:layout_constraintStart_toStartOf="@+id/olympPlannerNotifText" />
 
-    <TextView
+    <Button
         android:id="@+id/olympPlannerSkipButton"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/titan_one"
         android:gravity="center"
         android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
-        android:fontFamily="@font/black_han_sans"
         android:shadowRadius="5"
+        android:background="@drawable/olymp_planner_skip_btn"
         android:text="Skip"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -158,8 +151,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="9dp"
-        android:fontFamily="@font/black_han_sans"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/titan_one"
         android:gravity="center"
         android:letterSpacing="0"
         android:shadowColor="@color/black"

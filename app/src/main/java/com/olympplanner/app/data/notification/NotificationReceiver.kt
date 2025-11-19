@@ -8,6 +8,7 @@ import android.content.Intent
 import androidx.core.app.NotificationCompat
 import com.olympplanner.app.MainActivity
 import com.olympplanner.app.R
+import com.olympplanner.app.bkgoprte.presentation.app.OlympPlannerApplication
 
 class NotificationReceiver : BroadcastReceiver() {
 
@@ -49,7 +50,7 @@ class NotificationReceiver : BroadcastReceiver() {
         // Done action
         val doneIntent = createDoneIntent(context, taskId)
 
-        val notification = NotificationCompat.Builder(context, OlympPlannerApp.CHANNEL_ID)
+        val notification = NotificationCompat.Builder(context, OlympPlannerApplication.CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_notification)
             .setContentTitle(title)
             .setContentText(description)

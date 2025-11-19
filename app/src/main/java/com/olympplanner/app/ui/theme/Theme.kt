@@ -85,8 +85,8 @@ fun OlympPlannerTheme(
             window.statusBarColor = Color.Transparent.toArgb()
             window.navigationBarColor = Color.Transparent.toArgb()
             WindowCompat.getInsetsController(window, view).apply {
-                isAppearanceLightStatusBars = themeMode == ThemeMode.DAY
-                isAppearanceLightNavigationBars = themeMode == ThemeMode.DAY
+                isAppearanceLightStatusBars = false
+                isAppearanceLightNavigationBars = false
             }
         }
     }

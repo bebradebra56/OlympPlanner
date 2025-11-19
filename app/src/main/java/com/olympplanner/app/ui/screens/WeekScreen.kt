@@ -119,7 +119,7 @@ fun WeekScreen(
                                 onTaskComplete = { task, isCompleted ->
                                     viewModel.toggleTaskCompletion(task.id, isCompleted)
                                 },
-                                modifier = Modifier.animateItemPlacement()
+//                                modifier = Modifier.animateItemPlacement()
                             )
                         }
                     }

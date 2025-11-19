@@ -129,7 +129,7 @@ fun DayScreen(
                             onComplete = {
                                 viewModel.toggleTaskCompletion(task.id, !task.isCompleted)
                             },
-                            modifier = Modifier.animateItemPlacement()
+//                            modifier = Modifier.animateItemPlacement()
                         )
                     }
                 }
