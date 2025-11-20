@@ -1,17 +1,16 @@
 package com.olympplanner.app
 
-import android.Manifest
-import android.content.pm.PackageManager
-import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Scaffold
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.rememberNavController
 import com.olympplanner.app.data.local.AppDatabase
@@ -22,29 +21,19 @@ import com.olympplanner.app.ui.components.OlympBackground
 import com.olympplanner.app.ui.navigation.NavGraph
 import com.olympplanner.app.ui.theme.OlympPlannerTheme
 import com.olympplanner.app.ui.theme.ThemePreferences
-import com.olympplanner.app.ui.viewmodel.*
+import com.olympplanner.app.ui.viewmodel.NoteViewModel
+import com.olympplanner.app.ui.viewmodel.NoteViewModelFactory
+import com.olympplanner.app.ui.viewmodel.TaskViewModel
+import com.olympplanner.app.ui.viewmodel.TaskViewModelFactory
+import com.olympplanner.app.ui.viewmodel.ThemeViewModel
+import com.olympplanner.app.ui.viewmodel.ThemeViewModelFactory
 
 class MainActivity : ComponentActivity() {
 
-    private val requestPermissionLauncher = registerForActivityResult(
-        ActivityResultContracts.RequestPermission()
-    ) { isGranted: Boolean ->
-        // Handle permission result
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Request notification permission for Android 13+
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (ContextCompat.checkSelfPermission(
-                    this,
-                    Manifest.permission.POST_NOTIFICATIONS
-                ) != PackageManager.PERMISSION_GRANTED
-            ) {
-                requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
-            }
-        }
 
         // Initialize repositories
         val database = AppDatabase.getInstance(applicationContext)
